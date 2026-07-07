@@ -49,3 +49,10 @@ table {
 /*****************************************************
                     MAIN STYLES
 ******************************************************/
+body{
+    background-color: #aad4cf;
+    /* hsl = (hue, saturation, lightness) */
+    font-family: Arial, Helvetica, sans-serif;
+    /*if a font is really tight, use letter-spacing to open it up*/
+    letter-spacing: 3px
+}
