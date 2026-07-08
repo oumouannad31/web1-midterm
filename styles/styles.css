@@ -50,9 +50,154 @@ table {
                     MAIN STYLES
 ******************************************************/
 body{
-    background-color: #aad4cf;
-    /* hsl = (hue, saturation, lightness) */
-    font-family: Arial, Helvetica, sans-serif;
-    /*if a font is really tight, use letter-spacing to open it up*/
-    letter-spacing: 3px
+    /* Used this code to target and style the whole webpage and its content*/
+    background-color: #aad4cf; /*used it to add the referenced background-color to the page*/
+    font-family:Arial, Helvetica, sans-serif; /*I used it in the body tag to apply the same font on the whole site*/
+    line-height: 1.4; /*I used it in the body tag to apply the same inline space to the whole site*/
+}
+
+/* used it to target the page title, style it accordingly to the mockup and position it over the banner image*/
+h1 {
+    position:absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+/* Used it to target the element with class "container" and style it according to the mockup*/
+.container{
+    max-width: 1000px; /*sets a maximum width for the site to expand*/
+    margin: 0 auto; /*centers the page content*/
+    background-color: #c8dcd9; /*used it to add a lighter background color just like in the reference*/
+}
+
+footer {
+    text-align: right;
+    padding: 25px;
+    /*used it to align the copyright text to the right side of the page based on the mockup*/
+}
+
+/*****************************************************
+                HEADER STYLES
+*****************************************************/
+.site-header{
+    position:relative;
+    /* this code makes the header the positioning reference for the title*/
+}
+
+.site-header img {
+    width: 100%;
+    display: block;
+    /*Used it to make the banner image fill the entire header width*/
+}
+
+/*****************************************************
+                NAVIGATION STYLES
+*****************************************************/
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #d4e9e7;
+    /*used it to display the navigation links in a horizontal row*/
+}
+
+nav li {
+    /*used it to style each navigation item with spacing and borders*/
+    list-style: none;
+    width: 30%;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.3rem;
+    border-right: 1px solid #333;
+}
+
+nav li:last-child {
+    border-right: none;
+    /* Removes the border from the last navigation item. */
+}
+
+/*****************************************************
+                ARTICLE STYLING
+*****************************************************/
+.starfish-image{
+    /*used it to target the small starfish picture and float the image to the left so the text wraps around it*/
+width: 250px;
+float: left;
+margin: 0 20px 20px 0;
+}
+
+main {
+    padding: 10px;
+    /*used it to add space around the main page content*/
+}
+
+h2 {
+    /*to target & style heading 2*/
+    font-size: 2rem;
+    font-weight:250;
+    margin:20px 0;
+}
+
+h3 {
+    /*to target & style the h3 headings*/
+    font-size: 1.6rem;
+    font-weight:200;
+    margin: 25px 0 10px;
+}
+
+article ul {
+    /*used it to restore the bullet points for the facts list*/
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/*****************************************************
+                FORM STYLING
+*****************************************************/
+form {
+    /*used it to add a border and space around the form*/
+    border: 1px solid grey;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+label {
+    /*used it to target and place each label on its own line above the input field*/
+    display: block;
+    margin-top: 15px;
+}
+
+input,textarea {
+    /*used it to target and make the form fields span the width of the form*/
+    width: 100%;
+    margin-top: 8px;
+}
+
+textarea {
+    /*used it to set a larger height for the message box*/
+    height: 100px;
+}
+
+.radio-group label {
+    /* used it to keep the radio labels on the same line*/
+    display: inline;
+    margin-right: 5px;
+}
+
+.radio-group input {
+    /*used it to prevent the radio buttons from stretching across the form*/
+    width: auto;
+    margin-right: 10px;
+}
+
+/*****************************************************
+                BUTTON STYLES
+*****************************************************/
+button {
+    /*used it to add spacing and padding to the submit button*/
+    margin-top: 15px;
+    padding: 10px;
 }
